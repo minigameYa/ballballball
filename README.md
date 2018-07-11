@@ -1,2 +1,2 @@
-# ballballball
-ballballballgame
+# hello-world
+Hello world new project template.
