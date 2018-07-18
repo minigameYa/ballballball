@@ -552,6 +552,9 @@
     "ballPrefab": {
       "__uuid__": "13329a82-2c61-45af-aba3-e3e7433eecc4"
     },
+    "bulletPrefab": {
+      "__uuid__": "01d40cbf-c4fb-497a-9bcb-312253d1cf37"
+    },
     "car": {
       "__id__": 7
     },

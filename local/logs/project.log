@@ -1,73 +1,56 @@
-2018-07-11T01:47:50.971Z - normal: Load ~/.CocosCreator/settings.json
-2018-07-11T01:47:50.976Z - normal: checking language setting...
-2018-07-11T01:47:50.976Z - normal: Language: zh
-2018-07-11T01:47:51.998Z - success: protocol editor-framework registered
-2018-07-11T01:47:51.999Z - success: protocol app registered
-2018-07-11T01:47:51.999Z - success: protocol theme registered
-2018-07-11T01:47:51.999Z - success: protocol packages registered
-2018-07-11T01:47:52.000Z - success: protocol unpack registerred
-2018-07-11T01:47:52.000Z - success: protocol disable-commonjs registerred
-2018-07-11T01:47:54.988Z - normal: failed to connect login server due to request timeout
-2018-07-11T01:47:54.991Z - normal: Check project /Users/ganother/code/ballballball
-2018-07-11T01:47:54.992Z - normal: Initializing Cocos2d
-2018-07-11T01:47:55.220Z - normal: Initializing Asset Database
-2018-07-11T01:47:55.269Z - success: protocol uuid registerred
-2018-07-11T01:47:55.269Z - success: protocol db registerred
-2018-07-11T01:47:55.270Z - success: protocol thumbnail registerred
-2018-07-11T01:47:55.270Z - normal: Loading editor/builtin packages
-2018-07-11T01:47:55.296Z - success: anysdk loaded
-2018-07-11T01:47:55.435Z - success: assets loaded
-2018-07-11T01:47:55.443Z - success: builder loaded
-2018-07-11T01:47:55.452Z - success: cocos-analytics loaded
-2018-07-11T01:47:55.458Z - success: console loaded
-2018-07-11T01:47:55.496Z - success: fb-instant-games loaded
-2018-07-11T01:47:55.501Z - success: hierarchy loaded
-2018-07-11T01:47:55.507Z - success: inspector loaded
-2018-07-11T01:47:55.508Z - success: keystore loaded
-2018-07-11T01:47:55.512Z - success: node-library loaded
-2018-07-11T01:47:55.514Z - success: package-asset loaded
-2018-07-11T01:47:55.517Z - success: preferences loaded
-2018-07-11T01:47:55.520Z - success: project-exporter loaded
-2018-07-11T01:47:55.537Z - success: project-importer loaded
-2018-07-11T01:47:55.542Z - success: project-settings loaded
-2018-07-11T01:47:55.547Z - success: ui-kit loaded
-2018-07-11T01:47:55.552Z - success: ui-grid loaded
-2018-07-11T01:47:55.557Z - success: scene loaded
-2018-07-11T01:47:55.559Z - success: sprite-editor loaded
-2018-07-11T01:47:55.564Z - success: store loaded
-2018-07-11T01:47:55.570Z - success: timeline loaded
-2018-07-11T01:47:55.571Z - normal: Loading builtin packages
-2018-07-11T01:47:55.576Z - success: asset-db-debugger loaded
-2018-07-11T01:47:55.577Z - success: color-picker loaded
-2018-07-11T01:47:55.581Z - success: package-manager loaded
-2018-07-11T01:47:55.583Z - success: qqplay-adapter loaded
-2018-07-11T01:47:55.589Z - success: sdkbox loaded
-2018-07-11T01:47:55.594Z - success: tester loaded
-2018-07-11T01:47:55.598Z - success: ui-kit-preview-extra loaded
-2018-07-11T01:47:55.602Z - success: ui-kit-preview loaded
-2018-07-11T01:47:55.606Z - success: ui-tree loaded
-2018-07-11T01:47:55.607Z - success: weapp-adapter loaded
-2018-07-11T01:47:56.792Z - normal: Initializing project /Users/ganother/code/ballballball
-2018-07-11T01:47:56.795Z - normal: Loading packages
-2018-07-11T01:47:56.803Z - normal: Watching packages
-2018-07-11T01:47:56.932Z - normal: Run Application
-2018-07-11T01:47:57.430Z - success: preview server running at http://localhost:7457
-2018-07-11T01:48:03.186Z - normal: 1.9.2
-2018-07-11T01:49:07.195Z - error: { Error: connect ETIMEDOUT 47.104.243.207:443
-    at Object.exports._errnoException (util.js:1050:11)
-    at exports._exceptionWithHostPort (util.js:1073:20)
-    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1097:14)
-  code: 'ETIMEDOUT',
-  errno: 'ETIMEDOUT',
-  syscall: 'connect',
-  address: '47.104.243.207',
-  port: 443 }
-    at /Applications/CocosCreator.app/Contents/Resources/app.asar/share/login/lib/user.js:1:1441
-    at ClientRequest.Https.request.on.e (/Applications/CocosCreator.app/Contents/Resources/app.asar/share/login/lib/network.js:1:873)
-    at emitOne (events.js:96:13)
-    at ClientRequest.emit (events.js:191:7)
-    at TLSSocket.socketErrorListener (_http_client.js:358:9)
-    at emitOne (events.js:96:13)
-    at TLSSocket.emit (events.js:191:7)
-    at emitErrorNT (net.js:1283:8)
-    at _combinedTickCallback (internal/process/next_tick.js:80:11)
+2018-07-16T02:01:49.565Z - normal: Load ~/.CocosCreator/settings.json
+2018-07-16T02:01:49.569Z - normal: checking language setting...
+2018-07-16T02:01:49.569Z - normal: Language: zh
+2018-07-16T02:01:50.464Z - success: protocol editor-framework registered
+2018-07-16T02:01:50.465Z - success: protocol app registered
+2018-07-16T02:01:50.465Z - success: protocol theme registered
+2018-07-16T02:01:50.465Z - success: protocol packages registered
+2018-07-16T02:01:50.465Z - success: protocol unpack registerred
+2018-07-16T02:01:50.466Z - success: protocol disable-commonjs registerred
+2018-07-16T02:01:50.669Z - normal: connected!
+2018-07-16T02:01:50.672Z - normal: Check project /Users/ganother/code/ballballball
+2018-07-16T02:01:50.683Z - normal: Initializing Cocos2d
+2018-07-16T02:01:50.917Z - normal: Initializing Asset Database
+2018-07-16T02:01:50.954Z - success: protocol uuid registerred
+2018-07-16T02:01:50.954Z - success: protocol db registerred
+2018-07-16T02:01:50.954Z - success: protocol thumbnail registerred
+2018-07-16T02:01:50.954Z - normal: Loading editor/builtin packages
+2018-07-16T02:01:50.977Z - success: anysdk loaded
+2018-07-16T02:01:51.114Z - success: assets loaded
+2018-07-16T02:01:51.118Z - success: builder loaded
+2018-07-16T02:01:51.121Z - success: cocos-analytics loaded
+2018-07-16T02:01:51.127Z - success: console loaded
+2018-07-16T02:01:51.160Z - success: fb-instant-games loaded
+2018-07-16T02:01:51.165Z - success: hierarchy loaded
+2018-07-16T02:01:51.170Z - success: inspector loaded
+2018-07-16T02:01:51.171Z - success: keystore loaded
+2018-07-16T02:01:51.176Z - success: node-library loaded
+2018-07-16T02:01:51.178Z - success: package-asset loaded
+2018-07-16T02:01:51.180Z - success: preferences loaded
+2018-07-16T02:01:51.184Z - success: project-exporter loaded
+2018-07-16T02:01:51.202Z - success: project-importer loaded
+2018-07-16T02:01:51.206Z - success: project-settings loaded
+2018-07-16T02:01:51.211Z - success: ui-kit loaded
+2018-07-16T02:01:51.216Z - success: ui-grid loaded
+2018-07-16T02:01:51.221Z - success: scene loaded
+2018-07-16T02:01:51.223Z - success: sprite-editor loaded
+2018-07-16T02:01:51.227Z - success: store loaded
+2018-07-16T02:01:51.234Z - success: timeline loaded
+2018-07-16T02:01:51.235Z - normal: Loading builtin packages
+2018-07-16T02:01:51.240Z - success: asset-db-debugger loaded
+2018-07-16T02:01:51.241Z - success: color-picker loaded
+2018-07-16T02:01:51.246Z - success: package-manager loaded
+2018-07-16T02:01:51.247Z - success: qqplay-adapter loaded
+2018-07-16T02:01:51.254Z - success: sdkbox loaded
+2018-07-16T02:01:51.259Z - success: tester loaded
+2018-07-16T02:01:51.264Z - success: ui-kit-preview-extra loaded
+2018-07-16T02:01:51.268Z - success: ui-kit-preview loaded
+2018-07-16T02:01:51.272Z - success: ui-tree loaded
+2018-07-16T02:01:51.274Z - success: weapp-adapter loaded
+2018-07-16T02:01:52.384Z - normal: Initializing project /Users/ganother/code/ballballball
+2018-07-16T02:01:52.387Z - normal: Loading packages
+2018-07-16T02:01:52.392Z - normal: Watching packages
+2018-07-16T02:01:52.517Z - normal: Run Application
+2018-07-16T02:01:53.012Z - success: preview server running at http://localhost:7456
+2018-07-16T02:01:58.445Z - normal: 1.9.2
+2018-07-17T01:55:13.187Z - info: shutdown preview server

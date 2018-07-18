@@ -23,6 +23,7 @@ export default class NewClass extends cc.Component {
 
     @property
     text: string = 'hello';
+    game: any = null
 
     @property
     derection: string = derectionType.IDLE
@@ -58,6 +59,9 @@ export default class NewClass extends cc.Component {
             let move = event.getLocationX() - startDot
             this.wheelScroll(move - lastMove)
             lastMove = move
+            if (Math.abs(startX + move) > this.game.node.width / 2 - this.node.width / 2) {
+                return;
+            }
             this.node.x = startX + move
         })
         this.node.on(cc.Node.EventType.TOUCH_END, function (event: cc.Event.EventTouch) {

@@ -11,17 +11,22 @@ var NewClass = /** @class */ (function (_super) {
     function NewClass() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
         _this.ballPrefab = null;
+        _this.bulletPrefab = null;
         _this.car = null;
         _this.ground = null;
         _this.balls = [];
         _this.gameTime = 0;
         _this.carY = 0;
+        _this.stopSpawnBullet = false;
+        _this.idCount = 0;
         return _this;
     }
     // LIFE-CYCLE CALLBACKS:
     NewClass.prototype.onLoad = function () {
         this.carY = this.car.y + this.car.height / 2;
+        this.car.getComponent('Car').game = this;
         this.spawnNewBall();
+        this.initNewBullet();
     };
     NewClass.prototype.start = function () {
     };
@@ -64,20 +69,112 @@ var NewClass = /** @class */ (function (_super) {
         }
         x = dRandom == data_2.ballDerection.Left ? this.node.width / 2 : -this.node.width / 2;
         var Ball = ball.getComponent('Ball');
-        Ball.num = HP;
+        Ball.num = Ball.HP = 50;
         Ball.scale = scale;
         Ball.maxY = y;
         Ball.game = this;
         Ball.derection = dRandom;
+        Ball.id = this.idCount;
+        data_2.ballPositions[this.idCount] = {
+            x: 0,
+            y: 0,
+            width: 0,
+            node: null
+        };
+        this.idCount++;
         ball.setPosition(cc.p(x, y));
         this.node.addChild(ball);
     };
+    NewClass.prototype.splitBall = function (parentBall) {
+        if (parentBall.scale === data_2.ballScale.NORMAL) {
+            return;
+        }
+        var scale = parentBall.scale === data_2.ballScale.BIG ? data_2.ballScale.NORMAL : data_2.ballScale.BIG;
+        this.initSplitBall({
+            HP: Math.ceil(parentBall.HP * 0.35),
+            derection: data_2.ballDerection.Left,
+            x: parentBall.node.x,
+            y: parentBall.node.y,
+            scale: scale
+        });
+        this.initSplitBall({
+            HP: Math.ceil(parentBall.HP * 0.65),
+            derection: data_2.ballDerection.Right,
+            x: parentBall.node.x,
+            y: parentBall.node.y,
+            scale: scale
+        });
+    };
+    NewClass.prototype.initSplitBall = function (_a) {
+        var HP = _a.HP, derection = _a.derection, x = _a.x, scale = _a.scale, y = _a.y;
+        var maxY;
+        var ball = cc.instantiate(this.ballPrefab);
+        if (scale == data_2.ballScale.NORMAL) {
+            maxY = (this.node.height / 2 - this.carY) / 3 + this.carY - ball.height * scale / 2;
+        }
+        else {
+            maxY = (this.node.height / 2 - this.carY) / 3 * 2 + this.carY - ball.height * scale / 2;
+        }
+        var Ball = ball.getComponent('Ball');
+        Ball.num = Ball.HP = HP;
+        Ball.scale = scale;
+        Ball.maxY = maxY;
+        Ball.game = this;
+        Ball.derection = derection;
+        Ball.id = this.idCount;
+        data_2.ballPositions[this.idCount] = {
+            x: 0,
+            y: 0,
+            width: 0,
+            node: null
+        };
+        this.idCount++;
+        ball.setPosition(cc.p(x, y));
+        this.node.addChild(ball);
+    };
+    NewClass.prototype.initNewBullet = function () {
+        var bullet = cc.instantiate(this.bulletPrefab);
+        var Bullet = bullet.getComponent('Bullet');
+        Bullet.game = this;
+        Bullet.id = this.idCount;
+        data_2.bulletPositions[this.idCount] = {
+            x: 0,
+            y: 0,
+            node: null,
+            fade: false
+        };
+        this.idCount++;
+        this.node.addChild(bullet);
+    };
+    // 检测子弹与球体碰撞
+    NewClass.prototype.onShoot = function () {
+        for (var i in data_2.bulletPositions) {
+            var bullet = data_2.bulletPositions[i];
+            if (!bullet.fade) {
+                var bulletP = cc.p(bullet.x, bullet.y);
+                for (var j in data_2.ballPositions) {
+                    var ball = data_2.ballPositions[j];
+                    var ballP = cc.p(ball.x, ball.y);
+                    var dist = cc.pDistance(bulletP, ballP);
+                    if (dist < ball.width / 2) {
+                        ball.node.onShooted();
+                        bullet.node.onShooted();
+                        bullet.fade = true;
+                    }
+                }
+            }
+        }
+    };
     NewClass.prototype.update = function (dt) {
         this.gameTime += dt;
+        this.onShoot();
     };
     __decorate([
         property(cc.Prefab)
     ], NewClass.prototype, "ballPrefab", void 0);
+    __decorate([
+        property(cc.Prefab)
+    ], NewClass.prototype, "bulletPrefab", void 0);
     __decorate([
         property(cc.Node)
     ], NewClass.prototype, "car", void 0);

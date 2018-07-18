@@ -24,6 +24,7 @@ var NewClass = /** @class */ (function (_super) {
         var _this = _super !== null && _super.apply(this, arguments) || this;
         _this.label = null;
         _this.text = 'hello';
+        _this.game = null;
         _this.derection = derectionType.IDLE;
         return _this;
     }
@@ -50,6 +51,9 @@ var NewClass = /** @class */ (function (_super) {
             var move = event.getLocationX() - startDot;
             _this.wheelScroll(move - lastMove);
             lastMove = move;
+            if (Math.abs(startX + move) > _this.game.node.width / 2 - _this.node.width / 2) {
+                return;
+            }
             _this.node.x = startX + move;
         });
         this.node.on(cc.Node.EventType.TOUCH_END, function (event) {

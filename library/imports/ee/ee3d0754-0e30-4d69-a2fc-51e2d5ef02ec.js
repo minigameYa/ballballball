@@ -30,10 +30,19 @@ exports.ballScale = {
     BIG: 1.5,
     NORMAL: 1
 };
+// 球的运动方向
 var ballDerection;
 (function (ballDerection) {
     ballDerection[ballDerection["Left"] = 0] = "Left";
     ballDerection[ballDerection["Right"] = 1] = "Right";
 })(ballDerection = exports.ballDerection || (exports.ballDerection = {}));
+// 球的引用
+exports.ballIndexs = {};
+// 球的位置
+exports.ballPositions = {};
+// 子弹的引用
+exports.bulletIndexs = {};
+// 子弹的位置
+exports.bulletPositions = {};
 
 cc._RF.pop();

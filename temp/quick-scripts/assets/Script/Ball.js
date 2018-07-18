@@ -11,10 +11,12 @@ var NewClass = /** @class */ (function (_super) {
         var _this = _super !== null && _super.apply(this, arguments) || this;
         _this.scale = data_1.ballScale.NORMAL;
         _this.num = 0;
-        _this.jumpDuration = 2;
+        _this.jumpDuration = 1;
         _this.maxY = 0;
         _this.speed = 1;
         _this.game = null;
+        _this.id = 0;
+        _this.HP = 0;
         _this.points = null;
         return _this;
     }
@@ -22,27 +24,39 @@ var NewClass = /** @class */ (function (_super) {
     NewClass.prototype.onLoad = function () {
         this.node.width = this.node.width * this.scale;
         this.node.height = this.node.height * this.scale;
-        this.jumpAction = this.setJumpAction();
-        this.node.runAction(this.jumpAction);
+        this.setJumpAction();
         this.node.children[0].string = this.num + '';
         this.speed = this.derection == data_1.ballDerection.Right ? this.speed : -this.speed;
+        data_1.ballPositions[this.id].node = this;
+        data_1.ballPositions[this.id].width = this.node.width;
     };
     NewClass.prototype.start = function () {
     };
     NewClass.prototype.setJumpAction = function () {
         var groundY = this.game.ground.y;
-        if (this.scale == data_1.ballScale.NORMAL) {
-            this.jumpDuration = 1;
-        }
-        if (this.scale == data_1.ballScale.BIG) {
-            this.jumpDuration = 2;
-        }
-        if (this.scale == data_1.ballScale.BIGBIG) {
-            this.jumpDuration = 3;
-        }
+        // if (this.scale == ballScale.NORMAL) {
+        //     this.jumpDuration = 1
+        // }
+        // if (this.scale == ballScale.BIG) {
+        //     this.jumpDuration = 2
+        // }
+        // if (this.scale == ballScale.BIGBIG) {
+        //     this.jumpDuration = 3
+        // }
         var jumpUp = cc.moveBy(this.jumpDuration, cc.p(0, this.maxY - groundY - this.node.height / 2)).easing(cc.easeCubicActionOut());
         var jumpDown = cc.moveBy(this.jumpDuration, cc.p(0, -this.maxY + groundY + this.node.height / 2)).easing(cc.easeCubicActionIn());
-        return cc.repeatForever(cc.sequence(jumpDown, jumpUp));
+        var jumpAction = cc.repeatForever(cc.sequence(jumpDown, jumpUp));
+        if (this.node.y !== this.maxY) {
+            var trans = cc.moveBy(this.jumpDuration, cc.p(0, groundY + this.node.height / 2 - this.node.y));
+            var callback = cc.callFunc(function () {
+                this.node.runAction(cc.repeatForever(cc.sequence(jumpUp, jumpDown)));
+            }, this);
+            var transAction = cc.sequence(trans, callback);
+            this.node.runAction(transAction);
+        }
+        else {
+            this.node.runAction(jumpAction);
+        }
     };
     NewClass.prototype.ballCrossAction = function () {
         var borderX = this.game.node.width / 2;
@@ -69,15 +83,31 @@ var NewClass = /** @class */ (function (_super) {
     // 触碰到小车
     NewClass.prototype.onCrash = function () {
         if (this.getCarPosition() < this.node.width / 2 + this.game.car.width / 2) {
-            console.log('game over');
             this.node.stopAllActions();
-            this.destroy();
+            this.node.destroy();
+            delete data_1.ballPositions[this.id];
+            alert('你输了');
+        }
+    };
+    // 被子弹打到
+    NewClass.prototype.onShooted = function () {
+        this.num--;
+        this.node.children[0].string = this.num + '';
+        if (this.num == 0) {
+            this.game.splitBall(this);
+            this.node.destroy();
+            delete data_1.ballPositions[this.id];
+            if (!Object.keys(data_1.ballPositions).length) {
+                alert('你赢了！');
+            }
         }
     };
     NewClass.prototype.update = function (dt) {
         this.onCrash();
         this.points.string = this.num + '';
         this.ballCrossAction();
+        data_1.ballPositions[this.id].x = this.node.x;
+        data_1.ballPositions[this.id].y = this.node.y;
     };
     __decorate([
         property
