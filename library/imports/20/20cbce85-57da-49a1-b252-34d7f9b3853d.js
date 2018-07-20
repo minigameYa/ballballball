@@ -6,6 +6,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
 var data_1 = require("./modules/data");
 var data_2 = require("./modules/data");
+var util_1 = require("./modules/util");
 var NewClass = /** @class */ (function (_super) {
     __extends(NewClass, _super);
     function NewClass() {
@@ -14,11 +15,19 @@ var NewClass = /** @class */ (function (_super) {
         _this.bulletPrefab = null;
         _this.car = null;
         _this.ground = null;
+        _this.score = null;
         _this.balls = [];
         _this.gameTime = 0;
         _this.carY = 0;
         _this.stopSpawnBullet = false;
+        _this.stopSpawnBall = false;
         _this.idCount = 0;
+        _this.p1 = 0; // 大球的生成概率
+        _this.p2 = 0.1; // 中球的生成概率
+        _this.p3 = 0.9; // 小球的生成概率
+        _this.spawnCount = 4; // 自动生成小球倒计时 毫秒
+        _this.scoreNum = 0; //得分
+        _this.done = false; //游戏结束鸟
         return _this;
     }
     // LIFE-CYCLE CALLBACKS:
@@ -31,9 +40,13 @@ var NewClass = /** @class */ (function (_super) {
     NewClass.prototype.start = function () {
     };
     NewClass.prototype.spawnNewBall = function () {
-        this.initNewBall();
+        if (!this.stopSpawnBall) {
+            this.initNewBall();
+        }
+        this.spawnCount = 4;
     };
     NewClass.prototype.initNewBall = function () {
+        var scale = util_1.getRandom([data_2.ballScale.BIGBIG, data_2.ballScale.BIG, data_2.ballScale.NORMAL], [this.p1, this.p2, this.p3]);
         var ballCount = this.balls.length;
         var ball = cc.instantiate(this.ballPrefab);
         // 获取前二次的hp
@@ -41,9 +54,9 @@ var NewClass = /** @class */ (function (_super) {
         // 计算本次最大hp
         var HPMax = data_1.user.bullet.power * data_1.user.bullet.speed * (1 + 0.5);
         // 根据时间增长得出一个hp
-        var HPCur = 10 + this.gameTime / 120 * 1000 * HPMax;
+        var HPCur = 10 + this.gameTime / 120 * HPMax;
         // 最终hp在前二次于本次之间选择
-        var HP = Math.floor(cc.random0To1() * (HPCur - lastHP) + lastHP);
+        var HP = Math.floor(cc.random0To1() * (HPCur - lastHP) + lastHP) || 1;
         // 随机方向
         var dRandom = cc.random0To1() > 0.5 ? data_2.ballDerection.Left : data_2.ballDerection.Right;
         // 记录本次球信息
@@ -51,30 +64,26 @@ var NewClass = /** @class */ (function (_super) {
             HP: HP,
             derection: dRandom
         });
-        // 随机ball的体积 并计算高度
-        var scale;
-        var scaleRandom = cc.random0To1();
+        // 计算高度
         var x, y;
-        if (scaleRandom < 0.333333) {
-            scale = data_2.ballScale.NORMAL;
+        if (scale == data_2.ballScale.NORMAL) {
             y = (this.node.height / 2 - this.carY) / 3 + this.carY - ball.height * scale / 2;
         }
-        if (scaleRandom >= 0.333333 && scaleRandom <= 0.666666) {
-            scale = data_2.ballScale.BIG;
+        if (scale == data_2.ballScale.BIG) {
             y = (this.node.height / 2 - this.carY) / 3 * 2 + this.carY - ball.height * scale / 2;
         }
-        if (scaleRandom > 0.666666) {
-            scale = data_2.ballScale.BIGBIG;
+        if (scale == data_2.ballScale.BIGBIG) {
             y = (this.node.height / 2 - this.carY) + this.carY - ball.height * scale / 2;
         }
         x = dRandom == data_2.ballDerection.Left ? this.node.width / 2 : -this.node.width / 2;
         var Ball = ball.getComponent('Ball');
-        Ball.num = Ball.HP = 50;
+        Ball.num = Ball.HP = HP;
         Ball.scale = scale;
         Ball.maxY = y;
         Ball.game = this;
         Ball.derection = dRandom;
         Ball.id = this.idCount;
+        Ball.points.string = HP + '';
         data_2.ballPositions[this.idCount] = {
             x: 0,
             y: 0,
@@ -84,6 +93,16 @@ var NewClass = /** @class */ (function (_super) {
         this.idCount++;
         ball.setPosition(cc.p(x, y));
         this.node.addChild(ball);
+        // 更改下次产生球的概率
+        this.p3 = util_1.getPositive(this.p3 - this.gameTime % 20 * 0.15);
+        if (this.p3 == 0) {
+            this.p1 = util_1.getPositive(this.gameTime % 10 * 0.1);
+            this.p2 = util_1.getPositive(this.p2 - this.gameTime / 20 * 0.15);
+        }
+        else {
+            this.p1 = util_1.getPositive(this.p3 + this.gameTime % 20 * 0.05);
+            this.p2 = util_1.getPositive(this.p2 + this.gameTime % 20);
+        }
     };
     NewClass.prototype.splitBall = function (parentBall) {
         if (parentBall.scale === data_2.ballScale.NORMAL) {
@@ -150,15 +169,23 @@ var NewClass = /** @class */ (function (_super) {
     NewClass.prototype.onShoot = function () {
         for (var i in data_2.bulletPositions) {
             var bullet = data_2.bulletPositions[i];
+            if (!bullet.node) {
+                continue;
+            }
             if (!bullet.fade) {
                 var bulletP = cc.p(bullet.x, bullet.y);
                 for (var j in data_2.ballPositions) {
                     var ball = data_2.ballPositions[j];
+                    if (!ball.node) {
+                        continue;
+                    }
                     var ballP = cc.p(ball.x, ball.y);
                     var dist = cc.pDistance(bulletP, ballP);
                     if (dist < ball.width / 2) {
                         ball.node.onShooted();
                         bullet.node.onShooted();
+                        this.scoreNum++;
+                        this.score.string = this.scoreNum + '';
                         bullet.fade = true;
                     }
                 }
@@ -166,8 +193,34 @@ var NewClass = /** @class */ (function (_super) {
         }
     };
     NewClass.prototype.update = function (dt) {
+        if (this.done) {
+            return;
+        }
         this.gameTime += dt;
         this.onShoot();
+        this.spawnCount -= dt;
+        if (this.spawnCount <= 0) {
+            this.spawnNewBall();
+        }
+    };
+    // 一局结束
+    NewClass.prototype.singleGameDone = function () {
+        for (var i in data_2.bulletPositions) {
+            var bullet = data_2.bulletPositions[i];
+            bullet.node.over();
+        }
+        for (var i in data_2.ballPositions) {
+            var bullet = data_2.ballPositions[i];
+            bullet.node.over();
+        }
+        this.stopSpawnBullet = true;
+        this.stopSpawnBall = true;
+    };
+    // 游戏结束
+    NewClass.prototype.gameOver = function () {
+        this.singleGameDone();
+        this.done = true;
+        alert('你输了！！！！！');
     };
     __decorate([
         property(cc.Prefab)
@@ -181,6 +234,9 @@ var NewClass = /** @class */ (function (_super) {
     __decorate([
         property(cc.Node)
     ], NewClass.prototype, "ground", void 0);
+    __decorate([
+        property(cc.Label)
+    ], NewClass.prototype, "score", void 0);
     __decorate([
         property
     ], NewClass.prototype, "balls", void 0);

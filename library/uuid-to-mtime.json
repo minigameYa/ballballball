@@ -270,17 +270,17 @@
     "relativePath": "Texture/mainback.jpg"
   },
   "a62c6b7a-ebb3-422a-b278-18dd5791eeaa": {
-    "asset": 1531299866374,
-    "meta": 1531299866383,
+    "asset": 1532075269888,
+    "meta": 1532075269897,
     "relativePath": "Scene/hello.fire"
   },
   "13329a82-2c61-45af-aba3-e3e7433eecc4": {
-    "asset": 1531275990249,
-    "meta": 1531275990258,
+    "asset": 1532076256824,
+    "meta": 1532076256848,
     "relativePath": "ball.prefab"
   },
   "4696528f-ed18-4731-a90e-3838e9c2b07a": {
-    "asset": 1531191452366,
+    "asset": 1531983491538,
     "meta": 1531191452365,
     "relativePath": "Script/modules"
   },
@@ -299,24 +299,29 @@
     "meta": 1531300930397,
     "relativePath": "Script/Car.ts"
   },
+  "0834eb0e-660d-4a9d-a2cd-1f6a1d4baa97": {
+    "asset": 1531965472466,
+    "meta": 1531983491977,
+    "relativePath": "Script/modules/util.ts"
+  },
+  "cb4e3b7b-3a15-4fe4-9260-768ee340189a": {
+    "asset": 1532075236507,
+    "meta": 1532075251074,
+    "relativePath": "Script/Bullet.ts"
+  },
+  "8c319ea0-633f-4baa-99bf-e9fedf7cfd9c": {
+    "asset": 1532078538951,
+    "meta": 1532078544399,
+    "relativePath": "Script/Ball.ts"
+  },
   "ee3d0754-0e30-4d69-a2fc-51e2d5ef02ec": {
-    "asset": 1531360750855,
-    "meta": 1531363963254,
+    "asset": 1532078539817,
+    "meta": 1532078544400,
     "relativePath": "Script/modules/data.ts"
   },
   "20cbce85-57da-49a1-b252-34d7f9b3853d": {
-    "asset": 1531464166579,
-    "meta": 1531464168894,
+    "asset": 1532078653886,
+    "meta": 1532078657112,
     "relativePath": "Script/Game.ts"
-  },
-  "8c319ea0-633f-4baa-99bf-e9fedf7cfd9c": {
-    "asset": 1531466989743,
-    "meta": 1531466992660,
-    "relativePath": "Script/Ball.ts"
-  },
-  "cb4e3b7b-3a15-4fe4-9260-768ee340189a": {
-    "asset": 1531708753626,
-    "meta": 1531725718045,
-    "relativePath": "Script/Bullet.ts"
   }
 }

@@ -10,6 +10,7 @@ export default class NewClass extends cc.Component {
     carY: number = 0
     bulletNext: boolean = true //允许产生下一个子弹
     id: number = 0
+    done: boolean = false
 
     // LIFE-CYCLE CALLBACKS:
 
@@ -17,6 +18,8 @@ export default class NewClass extends cc.Component {
         this.carY = this.game.car.y + this.game.car.height / 2
         this.resetTheBullet()
         bulletPositions[this.id].node = this
+        bulletPositions[this.id].x = this.node.x
+        bulletPositions[this.id].y = this.node.y
     }
 
     // start() {
@@ -35,7 +38,17 @@ export default class NewClass extends cc.Component {
         this.node.opacity = 0
     }
 
+    over(){
+        this.done =true
+        this.node.stopAllActions()
+        this.node.destroy()
+        delete bulletPositions[this.id]
+    }
+
     update(dt) {
+        if(this.done){
+            return ;
+        }
         if (this.bulletNext && this.node.y > this.node.height * 2 + this.carY && !this.game.stopSpawnBullet) {
             this.game.initNewBullet()
             this.bulletNext = false

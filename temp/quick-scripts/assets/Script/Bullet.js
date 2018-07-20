@@ -15,6 +15,7 @@ var NewClass = /** @class */ (function (_super) {
         _this.carY = 0;
         _this.bulletNext = true; //允许产生下一个子弹
         _this.id = 0;
+        _this.done = false;
         return _this;
     }
     // LIFE-CYCLE CALLBACKS:
@@ -22,6 +23,8 @@ var NewClass = /** @class */ (function (_super) {
         this.carY = this.game.car.y + this.game.car.height / 2;
         this.resetTheBullet();
         data_1.bulletPositions[this.id].node = this;
+        data_1.bulletPositions[this.id].x = this.node.x;
+        data_1.bulletPositions[this.id].y = this.node.y;
     };
     // start() {
     // }
@@ -36,7 +39,16 @@ var NewClass = /** @class */ (function (_super) {
     NewClass.prototype.onShooted = function () {
         this.node.opacity = 0;
     };
+    NewClass.prototype.over = function () {
+        this.done = true;
+        this.node.stopAllActions();
+        this.node.destroy();
+        delete data_1.bulletPositions[this.id];
+    };
     NewClass.prototype.update = function (dt) {
+        if (this.done) {
+            return;
+        }
         if (this.bulletNext && this.node.y > this.node.height * 2 + this.carY && !this.game.stopSpawnBullet) {
             this.game.initNewBullet();
             this.bulletNext = false;

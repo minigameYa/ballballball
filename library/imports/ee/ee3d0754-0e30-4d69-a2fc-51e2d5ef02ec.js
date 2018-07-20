@@ -16,8 +16,8 @@ exports.bulletArray = [
 // 用户信息 子弹信息 关卡
 exports.user = {
     bullet: {
-        speed: 20,
-        power: 20
+        speed: 5,
+        power: 5
     },
     level: 0
 };
@@ -44,5 +44,11 @@ exports.ballPositions = {};
 exports.bulletIndexs = {};
 // 子弹的位置
 exports.bulletPositions = {};
+// 球的颜色
+exports.ballColor = {
+    1: [255, 255, 255],
+    10: [167, 255, 9],
+    20: [35, 255, 8]
+};
 
 cc._RF.pop();

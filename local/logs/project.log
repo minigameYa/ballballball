@@ -1,56 +1,56 @@
-2018-07-16T02:01:49.565Z - normal: Load ~/.CocosCreator/settings.json
-2018-07-16T02:01:49.569Z - normal: checking language setting...
-2018-07-16T02:01:49.569Z - normal: Language: zh
-2018-07-16T02:01:50.464Z - success: protocol editor-framework registered
-2018-07-16T02:01:50.465Z - success: protocol app registered
-2018-07-16T02:01:50.465Z - success: protocol theme registered
-2018-07-16T02:01:50.465Z - success: protocol packages registered
-2018-07-16T02:01:50.465Z - success: protocol unpack registerred
-2018-07-16T02:01:50.466Z - success: protocol disable-commonjs registerred
-2018-07-16T02:01:50.669Z - normal: connected!
-2018-07-16T02:01:50.672Z - normal: Check project /Users/ganother/code/ballballball
-2018-07-16T02:01:50.683Z - normal: Initializing Cocos2d
-2018-07-16T02:01:50.917Z - normal: Initializing Asset Database
-2018-07-16T02:01:50.954Z - success: protocol uuid registerred
-2018-07-16T02:01:50.954Z - success: protocol db registerred
-2018-07-16T02:01:50.954Z - success: protocol thumbnail registerred
-2018-07-16T02:01:50.954Z - normal: Loading editor/builtin packages
-2018-07-16T02:01:50.977Z - success: anysdk loaded
-2018-07-16T02:01:51.114Z - success: assets loaded
-2018-07-16T02:01:51.118Z - success: builder loaded
-2018-07-16T02:01:51.121Z - success: cocos-analytics loaded
-2018-07-16T02:01:51.127Z - success: console loaded
-2018-07-16T02:01:51.160Z - success: fb-instant-games loaded
-2018-07-16T02:01:51.165Z - success: hierarchy loaded
-2018-07-16T02:01:51.170Z - success: inspector loaded
-2018-07-16T02:01:51.171Z - success: keystore loaded
-2018-07-16T02:01:51.176Z - success: node-library loaded
-2018-07-16T02:01:51.178Z - success: package-asset loaded
-2018-07-16T02:01:51.180Z - success: preferences loaded
-2018-07-16T02:01:51.184Z - success: project-exporter loaded
-2018-07-16T02:01:51.202Z - success: project-importer loaded
-2018-07-16T02:01:51.206Z - success: project-settings loaded
-2018-07-16T02:01:51.211Z - success: ui-kit loaded
-2018-07-16T02:01:51.216Z - success: ui-grid loaded
-2018-07-16T02:01:51.221Z - success: scene loaded
-2018-07-16T02:01:51.223Z - success: sprite-editor loaded
-2018-07-16T02:01:51.227Z - success: store loaded
-2018-07-16T02:01:51.234Z - success: timeline loaded
-2018-07-16T02:01:51.235Z - normal: Loading builtin packages
-2018-07-16T02:01:51.240Z - success: asset-db-debugger loaded
-2018-07-16T02:01:51.241Z - success: color-picker loaded
-2018-07-16T02:01:51.246Z - success: package-manager loaded
-2018-07-16T02:01:51.247Z - success: qqplay-adapter loaded
-2018-07-16T02:01:51.254Z - success: sdkbox loaded
-2018-07-16T02:01:51.259Z - success: tester loaded
-2018-07-16T02:01:51.264Z - success: ui-kit-preview-extra loaded
-2018-07-16T02:01:51.268Z - success: ui-kit-preview loaded
-2018-07-16T02:01:51.272Z - success: ui-tree loaded
-2018-07-16T02:01:51.274Z - success: weapp-adapter loaded
-2018-07-16T02:01:52.384Z - normal: Initializing project /Users/ganother/code/ballballball
-2018-07-16T02:01:52.387Z - normal: Loading packages
-2018-07-16T02:01:52.392Z - normal: Watching packages
-2018-07-16T02:01:52.517Z - normal: Run Application
-2018-07-16T02:01:53.012Z - success: preview server running at http://localhost:7456
-2018-07-16T02:01:58.445Z - normal: 1.9.2
-2018-07-17T01:55:13.187Z - info: shutdown preview server
+2018-07-20T08:28:10.348Z - normal: Load ~/.CocosCreator/settings.json
+2018-07-20T08:28:10.351Z - normal: checking language setting...
+2018-07-20T08:28:10.351Z - normal: Language: zh
+2018-07-20T08:28:11.293Z - success: protocol editor-framework registered
+2018-07-20T08:28:11.293Z - success: protocol app registered
+2018-07-20T08:28:11.294Z - success: protocol theme registered
+2018-07-20T08:28:11.294Z - success: protocol packages registered
+2018-07-20T08:28:11.294Z - success: protocol unpack registerred
+2018-07-20T08:28:11.295Z - success: protocol disable-commonjs registerred
+2018-07-20T08:28:11.522Z - warn: [20406]授权客户端不存在。
+2018-07-20T08:28:11.530Z - normal: connected!
+2018-07-20T08:28:11.531Z - normal: Check project /Users/ganother/code/ballballball
+2018-07-20T08:28:11.533Z - normal: Initializing Cocos2d
+2018-07-20T08:28:11.783Z - normal: Initializing Asset Database
+2018-07-20T08:28:11.821Z - success: protocol uuid registerred
+2018-07-20T08:28:11.821Z - success: protocol db registerred
+2018-07-20T08:28:11.822Z - success: protocol thumbnail registerred
+2018-07-20T08:28:11.822Z - normal: Loading editor/builtin packages
+2018-07-20T08:28:11.843Z - success: anysdk loaded
+2018-07-20T08:28:11.978Z - success: assets loaded
+2018-07-20T08:28:11.982Z - success: builder loaded
+2018-07-20T08:28:11.984Z - success: cocos-analytics loaded
+2018-07-20T08:28:11.989Z - success: console loaded
+2018-07-20T08:28:12.024Z - success: fb-instant-games loaded
+2018-07-20T08:28:12.029Z - success: hierarchy loaded
+2018-07-20T08:28:12.034Z - success: inspector loaded
+2018-07-20T08:28:12.036Z - success: keystore loaded
+2018-07-20T08:28:12.041Z - success: node-library loaded
+2018-07-20T08:28:12.043Z - success: package-asset loaded
+2018-07-20T08:28:12.046Z - success: preferences loaded
+2018-07-20T08:28:12.049Z - success: project-exporter loaded
+2018-07-20T08:28:12.068Z - success: project-importer loaded
+2018-07-20T08:28:12.073Z - success: project-settings loaded
+2018-07-20T08:28:12.080Z - success: ui-kit loaded
+2018-07-20T08:28:12.086Z - success: ui-grid loaded
+2018-07-20T08:28:12.091Z - success: scene loaded
+2018-07-20T08:28:12.092Z - success: sprite-editor loaded
+2018-07-20T08:28:12.097Z - success: store loaded
+2018-07-20T08:28:12.104Z - success: timeline loaded
+2018-07-20T08:28:12.104Z - normal: Loading builtin packages
+2018-07-20T08:28:12.109Z - success: asset-db-debugger loaded
+2018-07-20T08:28:12.111Z - success: color-picker loaded
+2018-07-20T08:28:12.116Z - success: package-manager loaded
+2018-07-20T08:28:12.117Z - success: qqplay-adapter loaded
+2018-07-20T08:28:12.125Z - success: sdkbox loaded
+2018-07-20T08:28:12.130Z - success: tester loaded
+2018-07-20T08:28:12.135Z - success: ui-kit-preview-extra loaded
+2018-07-20T08:28:12.140Z - success: ui-kit-preview loaded
+2018-07-20T08:28:12.144Z - success: ui-tree loaded
+2018-07-20T08:28:12.146Z - success: weapp-adapter loaded
+2018-07-20T08:28:13.242Z - normal: Initializing project /Users/ganother/code/ballballball
+2018-07-20T08:28:13.245Z - normal: Loading packages
+2018-07-20T08:28:13.251Z - normal: Watching packages
+2018-07-20T08:28:13.375Z - normal: Run Application
+2018-07-20T08:28:13.901Z - success: preview server running at http://localhost:7456
+2018-07-20T08:28:19.584Z - normal: 1.9.2
