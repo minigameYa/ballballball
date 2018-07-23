@@ -102,7 +102,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 73,
+      "width": 0,
       "height": 80
     },
     "_rotationX": 0,
@@ -137,7 +137,7 @@
     "_N$file": null,
     "_isSystemFontUsed": true,
     "_spacingX": 0,
-    "_N$string": "new\n",
+    "_N$string": "\n",
     "_N$horizontalAlign": 1,
     "_N$verticalAlign": 1,
     "_N$fontFamily": "Arial",
@@ -189,7 +189,6 @@
     },
     "_enabled": true,
     "scale": 1,
-    "game": null,
     "points": {
       "__id__": 3
     }
