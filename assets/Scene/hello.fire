@@ -96,8 +96,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 640,
-      "height": 960
+      "width": 960,
+      "height": 640
     },
     "_rotationX": 0,
     "_rotationY": 0,
@@ -105,8 +105,8 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": 320,
-      "y": 480
+      "x": 480,
+      "y": 320
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -615,7 +615,7 @@
       "height": 960
     },
     "_fitWidth": false,
-    "_fitHeight": true
+    "_fitHeight": false
   },
   {
     "__type__": "20cbc6FV9pJobJSNNf5s4U9",
