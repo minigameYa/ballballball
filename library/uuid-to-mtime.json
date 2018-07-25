@@ -230,12 +230,12 @@
     "relativePath": "Scene"
   },
   "4734c20c-0db8-4eb2-92ea-e692f4d70934": {
-    "asset": 1531295247688,
+    "asset": 1532327707348,
     "meta": 1531100734411,
     "relativePath": "Script"
   },
   "7b81d4e8-ec84-4716-968d-500ac1d78a54": {
-    "asset": 1531294945887,
+    "asset": 1532327581096,
     "meta": 1531100734411,
     "relativePath": "Texture"
   },
@@ -270,8 +270,8 @@
     "relativePath": "Texture/mainback.jpg"
   },
   "a62c6b7a-ebb3-422a-b278-18dd5791eeaa": {
-    "asset": 1532075269888,
-    "meta": 1532075269897,
+    "asset": 1532338734847,
+    "meta": 1532338734875,
     "relativePath": "Scene/hello.fire"
   },
   "13329a82-2c61-45af-aba3-e3e7433eecc4": {
@@ -280,7 +280,7 @@
     "relativePath": "ball.prefab"
   },
   "4696528f-ed18-4731-a90e-3838e9c2b07a": {
-    "asset": 1531983491538,
+    "asset": 1532432277854,
     "meta": 1531191452365,
     "relativePath": "Script/modules"
   },
@@ -290,38 +290,58 @@
     "relativePath": "Texture/bullet.png"
   },
   "01d40cbf-c4fb-497a-9bcb-312253d1cf37": {
-    "asset": 1531306942966,
-    "meta": 1531306942979,
+    "asset": 1532330691043,
+    "meta": 1532330691063,
     "relativePath": "bullet.prefab"
-  },
-  "6c929165-8dd6-493a-a16f-8b3126db8b66": {
-    "asset": 1531300927597,
-    "meta": 1531300930397,
-    "relativePath": "Script/Car.ts"
-  },
-  "0834eb0e-660d-4a9d-a2cd-1f6a1d4baa97": {
-    "asset": 1531965472466,
-    "meta": 1531983491977,
-    "relativePath": "Script/modules/util.ts"
   },
   "cb4e3b7b-3a15-4fe4-9260-768ee340189a": {
     "asset": 1532075236507,
     "meta": 1532075251074,
     "relativePath": "Script/Bullet.ts"
   },
-  "8c319ea0-633f-4baa-99bf-e9fedf7cfd9c": {
-    "asset": 1532078538951,
-    "meta": 1532078544399,
-    "relativePath": "Script/Ball.ts"
-  },
   "ee3d0754-0e30-4d69-a2fc-51e2d5ef02ec": {
     "asset": 1532078539817,
     "meta": 1532078544400,
     "relativePath": "Script/modules/data.ts"
   },
+  "d4e21eda-f543-43ba-ab84-44b1da53b8e6": {
+    "asset": 1532327530156,
+    "meta": 1532327581131,
+    "relativePath": "Texture/coin.png"
+  },
+  "80e0c90d-5765-44aa-8abf-eb4ef74d455a": {
+    "asset": 1532335069686,
+    "meta": 1532335069710,
+    "relativePath": "coin.prefab"
+  },
+  "0834eb0e-660d-4a9d-a2cd-1f6a1d4baa97": {
+    "asset": 1532333986525,
+    "meta": 1532334516552,
+    "relativePath": "Script/modules/util.ts"
+  },
+  "8c319ea0-633f-4baa-99bf-e9fedf7cfd9c": {
+    "asset": 1532334878906,
+    "meta": 1532334945006,
+    "relativePath": "Script/Ball.ts"
+  },
+  "6c929165-8dd6-493a-a16f-8b3126db8b66": {
+    "asset": 1532335835927,
+    "meta": 1532335837922,
+    "relativePath": "Script/Car.ts"
+  },
+  "c9740625-5789-4e0b-8115-9a17cdd235d9": {
+    "asset": 1532337023484,
+    "meta": 1532337026968,
+    "relativePath": "Script/Coin.ts"
+  },
   "20cbce85-57da-49a1-b252-34d7f9b3853d": {
-    "asset": 1532078653886,
-    "meta": 1532078657112,
+    "asset": 1532432266569,
+    "meta": 1532432278452,
     "relativePath": "Script/Game.ts"
+  },
+  "fe2296fb-2cbc-446c-bf67-a243bb0f6c00": {
+    "asset": 1532432377073,
+    "meta": 1532432381465,
+    "relativePath": "Script/modules/fetch.ts"
   }
 }

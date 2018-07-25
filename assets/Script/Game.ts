@@ -2,6 +2,7 @@ const { ccclass, property } = cc._decorator;
 import { user } from './modules/data'
 import { ballScale, ballDerection, ballPositions, bulletPositions } from "./modules/data"
 import { getPositive, getRandom } from './modules/util';
+import { login } from './modules/fetch';
 
 @ccclass
 export default class NewClass extends cc.Component {
@@ -12,6 +13,9 @@ export default class NewClass extends cc.Component {
   @property(cc.Prefab)
   bulletPrefab: cc.Prefab = null;
 
+  @property(cc.Prefab)
+  coinPrefab: cc.Prefab = null;
+
   @property(cc.Node)
   car: cc.Node = null
 
@@ -20,6 +24,9 @@ export default class NewClass extends cc.Component {
 
   @property(cc.Label)
   score: cc.Label = null
+
+  @property(cc.Label)
+  gold: cc.Label = null
 
   @property
   balls: any[] = []
@@ -41,6 +48,7 @@ export default class NewClass extends cc.Component {
     this.car.getComponent('Car').game = this
     this.spawnNewBall()
     this.initNewBullet()
+    login()
   }
 
   start() {
@@ -54,6 +62,7 @@ export default class NewClass extends cc.Component {
     this.spawnCount = 4
   }
 
+  // 生产新的球体
   initNewBall() {
     let scale = getRandom([ballScale.BIGBIG, ballScale.BIG, ballScale.NORMAL], [this.p1, this.p2, this.p3])
     let ballCount = this.balls.length
@@ -113,6 +122,7 @@ export default class NewClass extends cc.Component {
     }
   }
 
+  // 分裂球体
   splitBall(parentBall) {
     if (parentBall.scale === ballScale.NORMAL) {
       return;
@@ -134,6 +144,7 @@ export default class NewClass extends cc.Component {
     })
   }
 
+  // 
   initSplitBall({ HP, derection, x, scale, y }) {
     let maxY
     const ball = cc.instantiate(this.ballPrefab)
@@ -160,6 +171,7 @@ export default class NewClass extends cc.Component {
     this.node.addChild(ball)
   }
 
+  // 生产新的子弹
   initNewBullet() {
     const bullet = cc.instantiate(this.bulletPrefab)
     const Bullet = bullet.getComponent('Bullet')
@@ -201,6 +213,21 @@ export default class NewClass extends cc.Component {
         }
       }
     }
+  }
+
+  // 生产金币
+  spawnCoins(x, y) {
+    const coin = cc.instantiate(this.coinPrefab);
+    const Coin = coin.getComponent('Coin')
+    Coin.game = this
+    coin.x = x
+    coin.y = y
+    this.node.addChild(coin)
+  }
+
+  // 获取到金币
+  gainGold() {
+    this.gold.string = parseInt(this.gold.string) + 1 + ''
   }
 
   update(dt) {

@@ -27,11 +27,11 @@
   },
   "renderMode": "0",
   "startScene": "a62c6b7a-ebb3-422a-b278-18dd5791eeaa",
-  "title": "hello_world",
+  "title": "ballblast",
   "webOrientation": "auto",
   "wechatgame": {
     "REMOTE_SERVER_ROOT": "",
-    "appid": "wx6ac3f5090a6b99c5",
+    "appid": "wxbed47e2f755d5e3b",
     "isSubdomain": false,
     "orientation": "portrait",
     "subContext": ""

@@ -109,6 +109,7 @@ var NewClass = /** @class */ (function (_super) {
         this.points.string = this.num + '';
         if (this.num == 0) {
             this.game.splitBall(this);
+            this.game.spawnCoins(this.node.x, this.node.y);
             this.node.destroy();
             delete data_1.ballPositions[this.id];
             var hasBigger = false;

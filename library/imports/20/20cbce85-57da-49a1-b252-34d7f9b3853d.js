@@ -7,15 +7,18 @@ var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
 var data_1 = require("./modules/data");
 var data_2 = require("./modules/data");
 var util_1 = require("./modules/util");
+var fetch_1 = require("./modules/fetch");
 var NewClass = /** @class */ (function (_super) {
     __extends(NewClass, _super);
     function NewClass() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
         _this.ballPrefab = null;
         _this.bulletPrefab = null;
+        _this.coinPrefab = null;
         _this.car = null;
         _this.ground = null;
         _this.score = null;
+        _this.gold = null;
         _this.balls = [];
         _this.gameTime = 0;
         _this.carY = 0;
@@ -36,6 +39,7 @@ var NewClass = /** @class */ (function (_super) {
         this.car.getComponent('Car').game = this;
         this.spawnNewBall();
         this.initNewBullet();
+        fetch_1.login();
     };
     NewClass.prototype.start = function () {
     };
@@ -45,6 +49,7 @@ var NewClass = /** @class */ (function (_super) {
         }
         this.spawnCount = 4;
     };
+    // 生产新的球体
     NewClass.prototype.initNewBall = function () {
         var scale = util_1.getRandom([data_2.ballScale.BIGBIG, data_2.ballScale.BIG, data_2.ballScale.NORMAL], [this.p1, this.p2, this.p3]);
         var ballCount = this.balls.length;
@@ -104,6 +109,7 @@ var NewClass = /** @class */ (function (_super) {
             this.p2 = util_1.getPositive(this.p2 + this.gameTime % 20);
         }
     };
+    // 分裂球体
     NewClass.prototype.splitBall = function (parentBall) {
         if (parentBall.scale === data_2.ballScale.NORMAL) {
             return;
@@ -124,6 +130,7 @@ var NewClass = /** @class */ (function (_super) {
             scale: scale
         });
     };
+    // 
     NewClass.prototype.initSplitBall = function (_a) {
         var HP = _a.HP, derection = _a.derection, x = _a.x, scale = _a.scale, y = _a.y;
         var maxY;
@@ -151,6 +158,7 @@ var NewClass = /** @class */ (function (_super) {
         ball.setPosition(cc.p(x, y));
         this.node.addChild(ball);
     };
+    // 生产新的子弹
     NewClass.prototype.initNewBullet = function () {
         var bullet = cc.instantiate(this.bulletPrefab);
         var Bullet = bullet.getComponent('Bullet');
@@ -192,6 +200,19 @@ var NewClass = /** @class */ (function (_super) {
             }
         }
     };
+    // 生产金币
+    NewClass.prototype.spawnCoins = function (x, y) {
+        var coin = cc.instantiate(this.coinPrefab);
+        var Coin = coin.getComponent('Coin');
+        Coin.game = this;
+        coin.x = x;
+        coin.y = y;
+        this.node.addChild(coin);
+    };
+    // 获取到金币
+    NewClass.prototype.gainGold = function () {
+        this.gold.string = parseInt(this.gold.string) + 1 + '';
+    };
     NewClass.prototype.update = function (dt) {
         if (this.done) {
             return;
@@ -229,6 +250,9 @@ var NewClass = /** @class */ (function (_super) {
         property(cc.Prefab)
     ], NewClass.prototype, "bulletPrefab", void 0);
     __decorate([
+        property(cc.Prefab)
+    ], NewClass.prototype, "coinPrefab", void 0);
+    __decorate([
         property(cc.Node)
     ], NewClass.prototype, "car", void 0);
     __decorate([
@@ -237,6 +261,9 @@ var NewClass = /** @class */ (function (_super) {
     __decorate([
         property(cc.Label)
     ], NewClass.prototype, "score", void 0);
+    __decorate([
+        property(cc.Label)
+    ], NewClass.prototype, "gold", void 0);
     __decorate([
         property
     ], NewClass.prototype, "balls", void 0);

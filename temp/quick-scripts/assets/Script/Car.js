@@ -63,8 +63,8 @@ var NewClass = /** @class */ (function (_super) {
     NewClass.prototype.wheelScroll = function (x) {
         var r = 58 / 2;
         var rotate = x % (Math.PI * 2 * r) / (Math.PI * 2 * r) * 360;
-        this.node.children[0].rotation += rotate;
         this.node.children[1].rotation += rotate;
+        this.node.children[2].rotation += rotate;
     };
     __decorate([
         property(cc.Label)

@@ -72,7 +72,7 @@ export default class NewClass extends cc.Component {
     wheelScroll(x) {
         const r = 58 / 2
         const rotate = x % (Math.PI * 2 * r) / (Math.PI * 2 * r) * 360
-        this.node.children[0].rotation += rotate
         this.node.children[1].rotation += rotate
+        this.node.children[2].rotation += rotate
     }
 }
