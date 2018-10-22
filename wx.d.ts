@@ -1,3 +1,4 @@
+
 interface WeixinStatic {
 
     /**
@@ -868,7 +869,7 @@ interface WeixinStatic {
     /**
      * 检查登陆态是否过期
      */
-    checkSession();
+    checkSession(options:any);
 
     /**
      * 发起微信支付
@@ -909,8 +910,45 @@ interface WeixinStatic {
         // 接口调用失败的回调函数
         fail?: Function
     });
-
+    cloud: {
+        init();
+        database(): db;
+        callFunction(any);
+    }
 }
+
+interface db{
+    collection(name: string): collection
+    command(): command
+}
+
+interface collection{
+    get(): Promise;
+    doc(id: string): doc;
+    field(data:any): Promise;
+    where(data:any): Promise;
+    add(data:any): Promise;
+}
+
+interface doc{
+    get(): Promise;
+    update(data: any): Promise;
+    set(data: any): Promise;
+    remove(): Promise;
+    field(data:any): Promise
+}
+
+interface command{
+    gt(num: number): command;
+    lt(num: number): command;
+    gte(num: number): command;
+    lte(num: number): command;
+    in(num: any[]): command;
+    and(c: command): command;
+    or(c: command): command;
+}
+
+
 
 declare var Page: Function; // 目前需要 hook 它，达到一些组件化的目的，所以设置成 var 而不是 const 
 declare const getCurrentPages: Function;

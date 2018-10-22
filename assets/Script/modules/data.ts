@@ -1,7 +1,9 @@
 
 interface User{
   bullet: Bullet,
-  level: number
+  level: number,
+  isLogin: boolean,
+  userInfo: any
 }
 
 interface Bullet{
@@ -26,7 +28,9 @@ export const user:User = {
     speed: 5,
     power: 5
   },
-  level: 0
+  level: 0,
+  isLogin: false,
+  userInfo: {}
 }
 
 export function updateUserData(obj){
@@ -59,3 +63,4 @@ export const ballColor = {
   10: [167, 255, 9],
   20: [35, 255, 8]
 }
+export const rankList:any[] = []

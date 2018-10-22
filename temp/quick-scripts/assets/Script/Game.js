@@ -7,7 +7,6 @@ var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
 var data_1 = require("./modules/data");
 var data_2 = require("./modules/data");
 var util_1 = require("./modules/util");
-var fetch_1 = require("./modules/fetch");
 var NewClass = /** @class */ (function (_super) {
     __extends(NewClass, _super);
     function NewClass() {
@@ -19,6 +18,8 @@ var NewClass = /** @class */ (function (_super) {
         _this.ground = null;
         _this.score = null;
         _this.gold = null;
+        _this.userName = null;
+        _this.result = null;
         _this.balls = [];
         _this.gameTime = 0;
         _this.carY = 0;
@@ -39,7 +40,7 @@ var NewClass = /** @class */ (function (_super) {
         this.car.getComponent('Car').game = this;
         this.spawnNewBall();
         this.initNewBullet();
-        fetch_1.login();
+        this.userName.string = data_1.user.userInfo.nickName;
     };
     NewClass.prototype.start = function () {
     };
@@ -241,7 +242,16 @@ var NewClass = /** @class */ (function (_super) {
     NewClass.prototype.gameOver = function () {
         this.singleGameDone();
         this.done = true;
-        alert('你输了！！！！！');
+        this.result.active = true;
+    };
+    // 开始游戏
+    NewClass.prototype.gameStart = function () {
+        this.done = false;
+        this.result.active = false;
+        this.stopSpawnBullet = false;
+        this.stopSpawnBall = false;
+        this.initNewBullet();
+        this.spawnNewBall();
     };
     __decorate([
         property(cc.Prefab)
@@ -264,6 +274,12 @@ var NewClass = /** @class */ (function (_super) {
     __decorate([
         property(cc.Label)
     ], NewClass.prototype, "gold", void 0);
+    __decorate([
+        property(cc.Label)
+    ], NewClass.prototype, "userName", void 0);
+    __decorate([
+        property(cc.Node)
+    ], NewClass.prototype, "result", void 0);
     __decorate([
         property
     ], NewClass.prototype, "balls", void 0);

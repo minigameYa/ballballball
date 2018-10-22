@@ -19,7 +19,9 @@ exports.user = {
         speed: 5,
         power: 5
     },
-    level: 0
+    level: 0,
+    isLogin: false,
+    userInfo: {}
 };
 function updateUserData(obj) {
 }
@@ -50,5 +52,6 @@ exports.ballColor = {
     10: [167, 255, 9],
     20: [35, 255, 8]
 };
+exports.rankList = [];
 
 cc._RF.pop();

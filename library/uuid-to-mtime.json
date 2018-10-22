@@ -225,12 +225,12 @@
     "relativePath": "prefab/webview.prefab"
   },
   "29f52784-2fca-467b-92e7-8fd9ef8c57b7": {
-    "asset": 1531120251010,
+    "asset": 1533798555612,
     "meta": 1531100734411,
     "relativePath": "Scene"
   },
   "4734c20c-0db8-4eb2-92ea-e692f4d70934": {
-    "asset": 1532327707348,
+    "asset": 1533796182160,
     "meta": 1531100734411,
     "relativePath": "Script"
   },
@@ -270,9 +270,9 @@
     "relativePath": "Texture/mainback.jpg"
   },
   "a62c6b7a-ebb3-422a-b278-18dd5791eeaa": {
-    "asset": 1532338734847,
-    "meta": 1532338734875,
-    "relativePath": "Scene/hello.fire"
+    "asset": 1533892918562,
+    "meta": 1533892918598,
+    "relativePath": "Scene/game.fire"
   },
   "13329a82-2c61-45af-aba3-e3e7433eecc4": {
     "asset": 1532076256824,
@@ -280,7 +280,7 @@
     "relativePath": "ball.prefab"
   },
   "4696528f-ed18-4731-a90e-3838e9c2b07a": {
-    "asset": 1532432277854,
+    "asset": 1533548214875,
     "meta": 1531191452365,
     "relativePath": "Script/modules"
   },
@@ -294,16 +294,6 @@
     "meta": 1532330691063,
     "relativePath": "bullet.prefab"
   },
-  "cb4e3b7b-3a15-4fe4-9260-768ee340189a": {
-    "asset": 1532075236507,
-    "meta": 1532075251074,
-    "relativePath": "Script/Bullet.ts"
-  },
-  "ee3d0754-0e30-4d69-a2fc-51e2d5ef02ec": {
-    "asset": 1532078539817,
-    "meta": 1532078544400,
-    "relativePath": "Script/modules/data.ts"
-  },
   "d4e21eda-f543-43ba-ab84-44b1da53b8e6": {
     "asset": 1532327530156,
     "meta": 1532327581131,
@@ -313,11 +303,6 @@
     "asset": 1532335069686,
     "meta": 1532335069710,
     "relativePath": "coin.prefab"
-  },
-  "0834eb0e-660d-4a9d-a2cd-1f6a1d4baa97": {
-    "asset": 1532333986525,
-    "meta": 1532334516552,
-    "relativePath": "Script/modules/util.ts"
   },
   "8c319ea0-633f-4baa-99bf-e9fedf7cfd9c": {
     "asset": 1532334878906,
@@ -334,14 +319,119 @@
     "meta": 1532337026968,
     "relativePath": "Script/Coin.ts"
   },
-  "20cbce85-57da-49a1-b252-34d7f9b3853d": {
-    "asset": 1532432266569,
-    "meta": 1532432278452,
-    "relativePath": "Script/Game.ts"
+  "fbd4e6a6-bce4-4d6d-8eb5-5babfb4d536e": {
+    "asset": 1532499306426,
+    "meta": 1532501321548,
+    "relativePath": "Scene/dead.fire"
+  },
+  "cb4e3b7b-3a15-4fe4-9260-768ee340189a": {
+    "asset": 1532570465780,
+    "meta": 1532570868515,
+    "relativePath": "Script/Bullet.ts"
+  },
+  "ee3d0754-0e30-4d69-a2fc-51e2d5ef02ec": {
+    "asset": 1533544768959,
+    "meta": 1533548215493,
+    "relativePath": "Script/modules/data.ts"
+  },
+  "0834eb0e-660d-4a9d-a2cd-1f6a1d4baa97": {
+    "asset": 1533547740755,
+    "meta": 1533548215773,
+    "relativePath": "Script/modules/util.ts"
+  },
+  "9d332b62-1dcc-478c-9771-3e44324f6e6d": {
+    "asset": 1533548844786,
+    "meta": 1533548214885,
+    "relativePath": "Script/libs"
+  },
+  "9ab99a1f-2294-4f7f-85b5-1a0a25370fea": {
+    "asset": 1533549864650,
+    "meta": 1533548214886,
+    "relativePath": "Script/libs/wafer2-client-sdk"
+  },
+  "82961d9a-c34c-409b-bd47-3d35969e2b5a": {
+    "asset": 1518135602000,
+    "meta": 1533548216084,
+    "relativePath": "Script/libs/symbol.js"
+  },
+  "1ac5edb8-50ec-4969-b4a6-dc41fad0785d": {
+    "asset": 1533549864811,
+    "meta": 1533548214888,
+    "relativePath": "Script/libs/wafer2-client-sdk/lib"
+  },
+  "2104f414-cd87-411e-87d1-965aa6812059": {
+    "asset": 1518135602000,
+    "meta": 1533548214897,
+    "relativePath": "Script/libs/wafer2-client-sdk/LICENSE"
+  },
+  "29679c95-0416-4b89-9ec4-792bf7a22f8b": {
+    "asset": 1518135602000,
+    "meta": 1533548214899,
+    "relativePath": "Script/libs/wafer2-client-sdk/package.json"
+  },
+  "9bc39d01-a0ee-4974-be80-cb81aade665c": {
+    "asset": 1518135602000,
+    "meta": 1533548214900,
+    "relativePath": "Script/libs/wafer2-client-sdk/README.md"
+  },
+  "43d5626f-569e-475e-a16f-76ea6b238fe4": {
+    "asset": 1533606619231,
+    "meta": 1533631991349,
+    "relativePath": "Script/libs/wafer2-client-sdk/index.ts"
+  },
+  "2ea6cfed-8179-4d69-b21e-16fcdcb5af0a": {
+    "asset": 1533549437577,
+    "meta": 1533549866093,
+    "relativePath": "Script/libs/wafer2-client-sdk/lib/constants.ts"
+  },
+  "3f8e7a8d-ab82-483a-b8dd-12940002df94": {
+    "asset": 1533549706984,
+    "meta": 1533549866426,
+    "relativePath": "Script/libs/wafer2-client-sdk/lib/login.ts"
+  },
+  "b045daad-5d41-49b4-be58-7d746a5d0288": {
+    "asset": 1533549793334,
+    "meta": 1533549866562,
+    "relativePath": "Script/libs/wafer2-client-sdk/lib/request.ts"
+  },
+  "ec07e219-ebef-4324-b7a5-88c8f5923ee5": {
+    "asset": 1533549554590,
+    "meta": 1533549866711,
+    "relativePath": "Script/libs/wafer2-client-sdk/lib/session.ts"
+  },
+  "2520ec11-631a-40fd-9320-a8d0d7ecba1d": {
+    "asset": 1533549693904,
+    "meta": 1533549866712,
+    "relativePath": "Script/libs/wafer2-client-sdk/lib/utils.ts"
+  },
+  "c7912581-99e8-4076-b75b-92b5f22486a6": {
+    "asset": 1533713717831,
+    "meta": 1533713739206,
+    "relativePath": "Script/config.ts"
+  },
+  "52cd31e1-aeff-42e6-83db-73ddd281e214": {
+    "asset": 1533800713775,
+    "meta": 1533800713797,
+    "relativePath": "Scene/start.fire"
+  },
+  "b07f9d45-b424-4722-9cde-7a52a95ade92": {
+    "asset": 1533808096403,
+    "meta": 1533882467861,
+    "relativePath": "Script/Start.ts"
   },
   "fe2296fb-2cbc-446c-bf67-a243bb0f6c00": {
-    "asset": 1532432377073,
-    "meta": 1532432381465,
+    "asset": 1533801598287,
+    "meta": 1533801605627,
     "relativePath": "Script/modules/fetch.ts"
+  },
+  "db143bbd-e6a9-42cd-9e37-10df85ac8a2c": {
+    "asset": 1533889864623,
+    "meta": 1533889940412,
+    "relativePath": "Script/Result.ts"
+  },
+  "20cbce85-57da-49a1-b252-34d7f9b3853d": {
+    "asset": 1533890194126,
+    "meta": 1533891149009,
+    "relativePath": "Script/Game.ts"
   }
 }

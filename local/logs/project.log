@@ -1,59 +1,65 @@
-2018-07-24T11:37:53.473Z - normal: Load ~/.CocosCreator/settings.json
-2018-07-24T11:37:53.477Z - normal: checking language setting...
-2018-07-24T11:37:53.477Z - normal: Language: zh
-2018-07-24T11:37:54.495Z - success: protocol editor-framework registered
-2018-07-24T11:37:54.495Z - success: protocol app registered
-2018-07-24T11:37:54.495Z - success: protocol theme registered
-2018-07-24T11:37:54.495Z - success: protocol packages registered
-2018-07-24T11:37:54.496Z - success: protocol unpack registerred
-2018-07-24T11:37:54.496Z - success: protocol disable-commonjs registerred
-2018-07-24T11:37:54.722Z - normal: connected!
-2018-07-24T11:37:54.723Z - normal: Check project /Users/ganother/code/ballballball
-2018-07-24T11:37:54.725Z - normal: Initializing Cocos2d
-2018-07-24T11:37:55.008Z - normal: Initializing Asset Database
-2018-07-24T11:37:55.051Z - success: protocol uuid registerred
-2018-07-24T11:37:55.052Z - success: protocol db registerred
-2018-07-24T11:37:55.052Z - success: protocol thumbnail registerred
-2018-07-24T11:37:55.052Z - normal: Loading editor/builtin packages
-2018-07-24T11:37:55.081Z - success: anysdk loaded
-2018-07-24T11:37:55.243Z - success: assets loaded
-2018-07-24T11:37:55.247Z - success: builder loaded
-2018-07-24T11:37:55.252Z - success: cocos-analytics loaded
-2018-07-24T11:37:55.258Z - success: console loaded
-2018-07-24T11:37:55.305Z - success: fb-instant-games loaded
-2018-07-24T11:37:55.310Z - success: hierarchy loaded
-2018-07-24T11:37:55.315Z - success: inspector loaded
-2018-07-24T11:37:55.319Z - success: keystore loaded
-2018-07-24T11:37:55.323Z - success: node-library loaded
-2018-07-24T11:37:55.325Z - success: package-asset loaded
-2018-07-24T11:37:55.327Z - success: preferences loaded
-2018-07-24T11:37:55.330Z - success: project-exporter loaded
-2018-07-24T11:37:55.354Z - success: project-importer loaded
-2018-07-24T11:37:55.358Z - success: project-settings loaded
-2018-07-24T11:37:55.364Z - success: ui-kit loaded
-2018-07-24T11:37:55.372Z - success: ui-grid loaded
-2018-07-24T11:37:55.377Z - success: scene loaded
-2018-07-24T11:37:55.378Z - success: sprite-editor loaded
-2018-07-24T11:37:55.385Z - success: store loaded
-2018-07-24T11:37:55.392Z - success: timeline loaded
-2018-07-24T11:37:55.393Z - normal: Loading builtin packages
-2018-07-24T11:37:55.397Z - success: asset-db-debugger loaded
-2018-07-24T11:37:55.400Z - success: color-picker loaded
-2018-07-24T11:37:55.406Z - success: package-manager loaded
-2018-07-24T11:37:55.407Z - success: qqplay-adapter loaded
-2018-07-24T11:37:55.415Z - success: sdkbox loaded
-2018-07-24T11:37:55.422Z - success: tester loaded
-2018-07-24T11:37:55.427Z - success: ui-kit-preview-extra loaded
-2018-07-24T11:37:55.433Z - success: ui-kit-preview loaded
-2018-07-24T11:37:55.438Z - success: ui-tree loaded
-2018-07-24T11:37:55.441Z - success: weapp-adapter loaded
-2018-07-24T11:37:57.220Z - normal: Initializing project /Users/ganother/code/ballballball
-2018-07-24T11:37:57.222Z - normal: Loading packages
-2018-07-24T11:37:57.228Z - normal: Watching packages
-2018-07-24T11:37:57.391Z - normal: Run Application
-2018-07-24T11:37:58.926Z - success: preview server running at http://localhost:7456
-2018-07-24T11:38:06.373Z - normal: 1.9.2
-2018-07-24T11:38:14.947Z - normal: Start building with options : {
+2018-08-10T06:27:43.359Z - normal: Load ~/.CocosCreator/settings.json
+2018-08-10T06:27:43.364Z - normal: checking language setting...
+2018-08-10T06:27:43.364Z - normal: Language: zh
+2018-08-10T06:27:44.666Z - success: protocol editor-framework registered
+2018-08-10T06:27:44.666Z - success: protocol app registered
+2018-08-10T06:27:44.667Z - success: protocol theme registered
+2018-08-10T06:27:44.667Z - success: protocol packages registered
+2018-08-10T06:27:44.667Z - success: protocol unpack registerred
+2018-08-10T06:27:44.668Z - success: protocol disable-commonjs registerred
+2018-08-10T06:27:44.926Z - normal: connected!
+2018-08-10T06:27:44.929Z - normal: Check project /Users/ganother/code/ballballball
+2018-08-10T06:27:44.932Z - normal: Initializing Cocos2d
+2018-08-10T06:27:45.248Z - normal: Initializing Asset Database
+2018-08-10T06:27:45.295Z - success: protocol uuid registerred
+2018-08-10T06:27:45.295Z - success: protocol db registerred
+2018-08-10T06:27:45.295Z - success: protocol thumbnail registerred
+2018-08-10T06:27:45.296Z - normal: Loading editor/builtin packages
+2018-08-10T06:27:45.327Z - success: anysdk loaded
+2018-08-10T06:27:45.497Z - success: assets loaded
+2018-08-10T06:27:45.501Z - success: builder loaded
+2018-08-10T06:27:45.503Z - success: cocos-analytics loaded
+2018-08-10T06:27:45.511Z - success: console loaded
+2018-08-10T06:27:45.552Z - success: fb-instant-games loaded
+2018-08-10T06:27:45.560Z - success: hierarchy loaded
+2018-08-10T06:27:45.566Z - success: inspector loaded
+2018-08-10T06:27:45.568Z - success: keystore loaded
+2018-08-10T06:27:45.575Z - success: node-library loaded
+2018-08-10T06:27:45.577Z - success: package-asset loaded
+2018-08-10T06:27:45.579Z - success: preferences loaded
+2018-08-10T06:27:45.583Z - success: project-exporter loaded
+2018-08-10T06:27:45.603Z - success: project-importer loaded
+2018-08-10T06:27:45.609Z - success: project-settings loaded
+2018-08-10T06:27:45.615Z - success: ui-kit loaded
+2018-08-10T06:27:45.620Z - success: ui-grid loaded
+2018-08-10T06:27:45.627Z - success: scene loaded
+2018-08-10T06:27:45.628Z - success: sprite-editor loaded
+2018-08-10T06:27:45.634Z - success: store loaded
+2018-08-10T06:27:45.643Z - success: timeline loaded
+2018-08-10T06:27:45.643Z - normal: Loading builtin packages
+2018-08-10T06:27:45.649Z - success: asset-db-debugger loaded
+2018-08-10T06:27:45.651Z - success: color-picker loaded
+2018-08-10T06:27:45.660Z - success: package-manager loaded
+2018-08-10T06:27:45.661Z - success: qqplay-adapter loaded
+2018-08-10T06:27:45.671Z - success: sdkbox loaded
+2018-08-10T06:27:45.678Z - success: tester loaded
+2018-08-10T06:27:45.683Z - success: ui-kit-preview-extra loaded
+2018-08-10T06:27:45.687Z - success: ui-kit-preview loaded
+2018-08-10T06:27:45.693Z - success: ui-tree loaded
+2018-08-10T06:27:45.695Z - success: weapp-adapter loaded
+2018-08-10T06:27:47.137Z - normal: Initializing project /Users/ganother/code/ballballball
+2018-08-10T06:27:47.142Z - normal: Loading packages
+2018-08-10T06:27:47.147Z - normal: Watching packages
+2018-08-10T06:27:47.300Z - normal: Run Application
+2018-08-10T06:27:48.223Z - success: preview server running at http://localhost:7456
+2018-08-10T06:27:56.336Z - normal: 1.9.2
+2018-08-10T06:29:02.851Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:1899
+2018-08-10T07:14:42.439Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:45972
+2018-08-10T07:18:09.471Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:49252
+2018-08-10T07:18:09.475Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:49254
+2018-08-10T07:21:57.987Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:53053
+2018-08-10T08:19:03.826Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:86681
+2018-08-10T08:21:23.765Z - normal: Start building with options : {
   "androidStudio": true,
   "apiLevel": "",
   "appABIs": [],
@@ -93,10 +99,12 @@
   },
   "renderMode": "0",
   "scenes": [
-    "a62c6b7a-ebb3-422a-b278-18dd5791eeaa"
+    "52cd31e1-aeff-42e6-83db-73ddd281e214",
+    "a62c6b7a-ebb3-422a-b278-18dd5791eeaa",
+    "fbd4e6a6-bce4-4d6d-8eb5-5babfb4d536e"
   ],
   "sourceMaps": false,
-  "startScene": "a62c6b7a-ebb3-422a-b278-18dd5791eeaa",
+  "startScene": "52cd31e1-aeff-42e6-83db-73ddd281e214",
   "template": "link",
   "title": "ballblast",
   "useDebugKeystore": true,
@@ -115,25 +123,25 @@
   "projectName": "ballblast",
   "debugBuildWorker": false
 }
-2018-07-24T11:38:14.951Z - normal: Building /Users/ganother/code/ballballball
-2018-07-24T11:38:14.952Z - normal: Destination /Users/ganother/code/ballballball/build/wechatgame
-2018-07-24T11:38:15.363Z - normal: Delete /Users/ganother/code/ballballball/build/wechatgame/**/*
-2018-07-24T11:38:20.474Z - normal: Compiled project javascript file successfully
-2018-07-24T11:38:20.475Z - normal: Start building assets
-2018-07-24T11:38:20.475Z - normal: Start spawn build-worker
-2018-07-24T11:38:21.407Z - normal: Finish spawn build-worker
-2018-07-24T11:38:21.407Z - normal: Start init build-worker
-2018-07-24T11:38:23.870Z - normal: 1.9.2
-2018-07-24T11:38:23.972Z - normal: Finish init build-worker
-2018-07-24T11:38:23.973Z - normal: Start build-assets in worker
-2018-07-24T11:38:24.324Z - normal: Finish build-assets in worker
-2018-07-24T11:38:24.331Z - normal: Finish building assets
-2018-07-24T11:38:24.342Z - normal: Start building raw assets
-2018-07-24T11:38:24.344Z - normal: Start building plugin scripts
-2018-07-24T11:38:24.402Z - normal: Finish building raw assets
-2018-07-24T11:38:24.409Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
-2018-07-24T11:38:26.238Z - normal: Built to "/Users/ganother/code/ballballball/build/wechatgame" successfully
-2018-07-24T11:39:42.525Z - normal: Start building with options : {
+2018-08-10T08:21:23.776Z - normal: Building /Users/ganother/code/ballballball
+2018-08-10T08:21:23.777Z - normal: Destination /Users/ganother/code/ballballball/build/wechatgame
+2018-08-10T08:21:24.204Z - normal: Delete /Users/ganother/code/ballballball/build/wechatgame/**/*
+2018-08-10T08:21:31.136Z - normal: Compiled project javascript file successfully
+2018-08-10T08:21:31.137Z - normal: Start building assets
+2018-08-10T08:21:31.138Z - normal: Start spawn build-worker
+2018-08-10T08:21:32.086Z - normal: Finish spawn build-worker
+2018-08-10T08:21:32.086Z - normal: Start init build-worker
+2018-08-10T08:21:35.023Z - normal: 1.9.2
+2018-08-10T08:21:35.183Z - normal: Finish init build-worker
+2018-08-10T08:21:35.184Z - normal: Start build-assets in worker
+2018-08-10T08:21:35.680Z - normal: Finish build-assets in worker
+2018-08-10T08:21:35.689Z - normal: Finish building assets
+2018-08-10T08:21:35.703Z - normal: Start building raw assets
+2018-08-10T08:21:35.705Z - normal: Start building plugin scripts
+2018-08-10T08:21:35.775Z - normal: Finish building raw assets
+2018-08-10T08:21:35.782Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
+2018-08-10T08:21:37.947Z - normal: Built to "/Users/ganother/code/ballballball/build/wechatgame" successfully
+2018-08-10T08:22:08.840Z - normal: Start building with options : {
   "androidStudio": true,
   "apiLevel": "",
   "appABIs": [],
@@ -173,10 +181,12 @@
   },
   "renderMode": "0",
   "scenes": [
-    "a62c6b7a-ebb3-422a-b278-18dd5791eeaa"
+    "52cd31e1-aeff-42e6-83db-73ddd281e214",
+    "a62c6b7a-ebb3-422a-b278-18dd5791eeaa",
+    "fbd4e6a6-bce4-4d6d-8eb5-5babfb4d536e"
   ],
   "sourceMaps": false,
-  "startScene": "a62c6b7a-ebb3-422a-b278-18dd5791eeaa",
+  "startScene": "52cd31e1-aeff-42e6-83db-73ddd281e214",
   "template": "link",
   "title": "ballblast",
   "useDebugKeystore": true,
@@ -195,22 +205,355 @@
   "projectName": "ballblast",
   "debugBuildWorker": false
 }
-2018-07-24T11:39:42.543Z - normal: Building /Users/ganother/code/ballballball
-2018-07-24T11:39:42.543Z - normal: Destination /Users/ganother/code/ballballball/build/wechatgame
-2018-07-24T11:39:42.544Z - normal: Delete /Users/ganother/code/ballballball/build/wechatgame/**/*
-2018-07-24T11:39:47.162Z - normal: Compiled project javascript file successfully
-2018-07-24T11:39:47.163Z - normal: Start building assets
-2018-07-24T11:39:47.163Z - normal: Start spawn build-worker
-2018-07-24T11:39:48.111Z - normal: Finish spawn build-worker
-2018-07-24T11:39:48.111Z - normal: Start init build-worker
-2018-07-24T11:39:50.548Z - normal: 1.9.2
-2018-07-24T11:39:50.669Z - normal: Finish init build-worker
-2018-07-24T11:39:50.670Z - normal: Start build-assets in worker
-2018-07-24T11:39:50.982Z - normal: Finish build-assets in worker
-2018-07-24T11:39:50.992Z - normal: Finish building assets
-2018-07-24T11:39:51.003Z - normal: Start building raw assets
-2018-07-24T11:39:51.004Z - normal: Start building plugin scripts
-2018-07-24T11:39:51.061Z - normal: Finish building raw assets
-2018-07-24T11:39:51.072Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
-2018-07-24T11:39:52.574Z - normal: Built to "/Users/ganother/code/ballballball/build/wechatgame" successfully
-2018-07-24T11:44:20.227Z - info: shutdown preview server
+2018-08-10T08:22:08.861Z - normal: Building /Users/ganother/code/ballballball
+2018-08-10T08:22:08.862Z - normal: Destination /Users/ganother/code/ballballball/build/wechatgame
+2018-08-10T08:22:08.865Z - normal: Delete /Users/ganother/code/ballballball/build/wechatgame/**/*
+2018-08-10T08:22:15.105Z - normal: Compiled project javascript file successfully
+2018-08-10T08:22:15.105Z - normal: Start building assets
+2018-08-10T08:22:15.105Z - normal: Start spawn build-worker
+2018-08-10T08:22:16.440Z - normal: Finish spawn build-worker
+2018-08-10T08:22:16.441Z - normal: Start init build-worker
+2018-08-10T08:22:19.898Z - normal: 1.9.2
+2018-08-10T08:22:20.127Z - normal: Finish init build-worker
+2018-08-10T08:22:20.127Z - normal: Start build-assets in worker
+2018-08-10T08:22:20.817Z - normal: Finish build-assets in worker
+2018-08-10T08:22:20.825Z - normal: Finish building assets
+2018-08-10T08:22:20.840Z - normal: Start building raw assets
+2018-08-10T08:22:20.841Z - normal: Start building plugin scripts
+2018-08-10T08:22:20.920Z - normal: Finish building raw assets
+2018-08-10T08:22:20.925Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
+2018-08-10T08:22:22.585Z - normal: Built to "/Users/ganother/code/ballballball/build/wechatgame" successfully
+2018-08-10T08:32:20.762Z - normal: Start building with options : {
+  "androidStudio": true,
+  "apiLevel": "",
+  "appABIs": [],
+  "appKey": "",
+  "appSecret": "",
+  "buildPath": "/Users/ganother/code/ballballball/build",
+  "debug": false,
+  "dest": "/Users/ganother/code/ballballball/build/wechatgame",
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [],
+  "fb-instant-games": {},
+  "includeAnySDK": false,
+  "includeEruda": false,
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "jailbreakPlatform": false,
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.helloworld",
+  "platform": "wechatgame",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "privateKey": "",
+  "qqplay": {
+    "REMOTE_SERVER_ROOT": "",
+    "orientation": "portrait"
+  },
+  "renderMode": "0",
+  "scenes": [
+    "52cd31e1-aeff-42e6-83db-73ddd281e214",
+    "a62c6b7a-ebb3-422a-b278-18dd5791eeaa",
+    "fbd4e6a6-bce4-4d6d-8eb5-5babfb4d536e"
+  ],
+  "sourceMaps": false,
+  "startScene": "52cd31e1-aeff-42e6-83db-73ddd281e214",
+  "template": "link",
+  "title": "ballblast",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "auto",
+  "wechatgame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "wxbed47e2f755d5e3b",
+    "isSubdomain": false,
+    "orientation": "portrait",
+    "subContext": ""
+  },
+  "xxteaKey": "6ac428be-842d-4f",
+  "zipCompressJs": true,
+  "project": "/Users/ganother/code/ballballball",
+  "projectName": "ballblast",
+  "debugBuildWorker": false
+}
+2018-08-10T08:32:20.780Z - normal: Building /Users/ganother/code/ballballball
+2018-08-10T08:32:20.780Z - normal: Destination /Users/ganother/code/ballballball/build/wechatgame
+2018-08-10T08:32:20.781Z - normal: Delete /Users/ganother/code/ballballball/build/wechatgame/**/*
+2018-08-10T08:32:24.917Z - normal: Compiled project javascript file successfully
+2018-08-10T08:32:24.918Z - normal: Start building assets
+2018-08-10T08:32:24.918Z - normal: Start spawn build-worker
+2018-08-10T08:32:25.772Z - normal: Finish spawn build-worker
+2018-08-10T08:32:25.772Z - normal: Start init build-worker
+2018-08-10T08:32:28.221Z - normal: 1.9.2
+2018-08-10T08:32:28.357Z - normal: Finish init build-worker
+2018-08-10T08:32:28.357Z - normal: Start build-assets in worker
+2018-08-10T08:32:28.843Z - normal: Finish build-assets in worker
+2018-08-10T08:32:28.849Z - normal: Finish building assets
+2018-08-10T08:32:28.859Z - normal: Start building raw assets
+2018-08-10T08:32:28.860Z - normal: Start building plugin scripts
+2018-08-10T08:32:28.916Z - normal: Finish building raw assets
+2018-08-10T08:32:28.921Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
+2018-08-10T08:32:30.162Z - normal: Built to "/Users/ganother/code/ballballball/build/wechatgame" successfully
+2018-08-10T08:35:40.612Z - normal: Start building with options : {
+  "androidStudio": true,
+  "apiLevel": "",
+  "appABIs": [],
+  "appKey": "",
+  "appSecret": "",
+  "buildPath": "/Users/ganother/code/ballballball/build",
+  "debug": false,
+  "dest": "/Users/ganother/code/ballballball/build/wechatgame",
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [],
+  "fb-instant-games": {},
+  "includeAnySDK": false,
+  "includeEruda": false,
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "jailbreakPlatform": false,
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.helloworld",
+  "platform": "wechatgame",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "privateKey": "",
+  "qqplay": {
+    "REMOTE_SERVER_ROOT": "",
+    "orientation": "portrait"
+  },
+  "renderMode": "0",
+  "scenes": [
+    "52cd31e1-aeff-42e6-83db-73ddd281e214",
+    "a62c6b7a-ebb3-422a-b278-18dd5791eeaa",
+    "fbd4e6a6-bce4-4d6d-8eb5-5babfb4d536e"
+  ],
+  "sourceMaps": false,
+  "startScene": "52cd31e1-aeff-42e6-83db-73ddd281e214",
+  "template": "link",
+  "title": "ballblast",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "auto",
+  "wechatgame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "wxbed47e2f755d5e3b",
+    "isSubdomain": false,
+    "orientation": "portrait",
+    "subContext": ""
+  },
+  "xxteaKey": "6ac428be-842d-4f",
+  "zipCompressJs": true,
+  "project": "/Users/ganother/code/ballballball",
+  "projectName": "ballblast",
+  "debugBuildWorker": false
+}
+2018-08-10T08:35:40.638Z - normal: Building /Users/ganother/code/ballballball
+2018-08-10T08:35:40.638Z - normal: Destination /Users/ganother/code/ballballball/build/wechatgame
+2018-08-10T08:35:40.641Z - normal: Delete /Users/ganother/code/ballballball/build/wechatgame/**/*
+2018-08-10T08:35:46.880Z - normal: Compiled project javascript file successfully
+2018-08-10T08:35:46.880Z - normal: Start building assets
+2018-08-10T08:35:46.881Z - normal: Start spawn build-worker
+2018-08-10T08:35:47.987Z - normal: Finish spawn build-worker
+2018-08-10T08:35:47.987Z - normal: Start init build-worker
+2018-08-10T08:35:50.898Z - normal: 1.9.2
+2018-08-10T08:35:51.076Z - normal: Finish init build-worker
+2018-08-10T08:35:51.076Z - normal: Start build-assets in worker
+2018-08-10T08:35:51.564Z - normal: Finish build-assets in worker
+2018-08-10T08:35:51.575Z - normal: Finish building assets
+2018-08-10T08:35:51.588Z - normal: Start building raw assets
+2018-08-10T08:35:51.590Z - normal: Start building plugin scripts
+2018-08-10T08:35:51.671Z - normal: Finish building raw assets
+2018-08-10T08:35:51.678Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
+2018-08-10T08:35:53.321Z - normal: Built to "/Users/ganother/code/ballballball/build/wechatgame" successfully
+2018-08-10T08:53:09.871Z - normal: Start building with options : {
+  "androidStudio": true,
+  "apiLevel": "",
+  "appABIs": [],
+  "appKey": "",
+  "appSecret": "",
+  "buildPath": "/Users/ganother/code/ballballball/build",
+  "debug": false,
+  "dest": "/Users/ganother/code/ballballball/build/wechatgame",
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [],
+  "fb-instant-games": {},
+  "includeAnySDK": false,
+  "includeEruda": false,
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "jailbreakPlatform": false,
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.helloworld",
+  "platform": "wechatgame",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "privateKey": "",
+  "qqplay": {
+    "REMOTE_SERVER_ROOT": "",
+    "orientation": "portrait"
+  },
+  "renderMode": "0",
+  "scenes": [
+    "52cd31e1-aeff-42e6-83db-73ddd281e214",
+    "a62c6b7a-ebb3-422a-b278-18dd5791eeaa",
+    "fbd4e6a6-bce4-4d6d-8eb5-5babfb4d536e"
+  ],
+  "sourceMaps": false,
+  "startScene": "52cd31e1-aeff-42e6-83db-73ddd281e214",
+  "template": "link",
+  "title": "ballblast",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "auto",
+  "wechatgame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "wxbed47e2f755d5e3b",
+    "isSubdomain": false,
+    "orientation": "portrait",
+    "subContext": ""
+  },
+  "xxteaKey": "6ac428be-842d-4f",
+  "zipCompressJs": true,
+  "project": "/Users/ganother/code/ballballball",
+  "projectName": "ballblast",
+  "debugBuildWorker": false
+}
+2018-08-10T08:53:09.889Z - normal: Building /Users/ganother/code/ballballball
+2018-08-10T08:53:09.889Z - normal: Destination /Users/ganother/code/ballballball/build/wechatgame
+2018-08-10T08:53:09.891Z - normal: Delete /Users/ganother/code/ballballball/build/wechatgame/**/*
+2018-08-10T08:53:14.834Z - normal: Compiled project javascript file successfully
+2018-08-10T08:53:14.835Z - normal: Start building assets
+2018-08-10T08:53:14.835Z - normal: Start spawn build-worker
+2018-08-10T08:53:15.713Z - normal: Finish spawn build-worker
+2018-08-10T08:53:15.713Z - normal: Start init build-worker
+2018-08-10T08:53:18.967Z - normal: 1.9.2
+2018-08-10T08:53:19.115Z - normal: Finish init build-worker
+2018-08-10T08:53:19.115Z - normal: Start build-assets in worker
+2018-08-10T08:53:19.622Z - normal: Finish build-assets in worker
+2018-08-10T08:53:19.629Z - normal: Finish building assets
+2018-08-10T08:53:19.638Z - normal: Start building raw assets
+2018-08-10T08:53:19.639Z - normal: Start building plugin scripts
+2018-08-10T08:53:19.702Z - normal: Finish building raw assets
+2018-08-10T08:53:19.706Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
+2018-08-10T08:53:21.272Z - normal: Built to "/Users/ganother/code/ballballball/build/wechatgame" successfully
+2018-08-10T09:21:56.573Z - error: scene 没有保存，请先保存相关信息再进行构建。
+    at Editor.Ipc.sendToPanel (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor/builtin/builder/panel/builder.js:1:14928)
+    at EventEmitter.ipcRenderer.on.n (/Applications/CocosCreator.app/Contents/Resources/app.asar/editor-framework/lib/renderer/ipc.js:1:4587)
+    at emitMany (events.js:127:13)
+    at EventEmitter.emit (events.js:204:7)
+2018-08-10T09:22:00.342Z - normal: Start building with options : {
+  "androidStudio": true,
+  "apiLevel": "",
+  "appABIs": [],
+  "appKey": "",
+  "appSecret": "",
+  "buildPath": "/Users/ganother/code/ballballball/build",
+  "debug": false,
+  "dest": "/Users/ganother/code/ballballball/build/wechatgame",
+  "encryptJs": true,
+  "excludeScenes": [],
+  "excludedModules": [],
+  "fb-instant-games": {},
+  "includeAnySDK": false,
+  "includeEruda": false,
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "jailbreakPlatform": false,
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.helloworld",
+  "platform": "wechatgame",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "privateKey": "",
+  "qqplay": {
+    "REMOTE_SERVER_ROOT": "",
+    "orientation": "portrait"
+  },
+  "renderMode": "0",
+  "scenes": [
+    "52cd31e1-aeff-42e6-83db-73ddd281e214",
+    "a62c6b7a-ebb3-422a-b278-18dd5791eeaa",
+    "fbd4e6a6-bce4-4d6d-8eb5-5babfb4d536e"
+  ],
+  "sourceMaps": false,
+  "startScene": "52cd31e1-aeff-42e6-83db-73ddd281e214",
+  "template": "link",
+  "title": "ballblast",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "auto",
+  "wechatgame": {
+    "REMOTE_SERVER_ROOT": "",
+    "appid": "wxbed47e2f755d5e3b",
+    "isSubdomain": false,
+    "orientation": "portrait",
+    "subContext": ""
+  },
+  "xxteaKey": "6ac428be-842d-4f",
+  "zipCompressJs": true,
+  "project": "/Users/ganother/code/ballballball",
+  "projectName": "ballblast",
+  "debugBuildWorker": false
+}
+2018-08-10T09:22:00.360Z - normal: Building /Users/ganother/code/ballballball
+2018-08-10T09:22:00.360Z - normal: Destination /Users/ganother/code/ballballball/build/wechatgame
+2018-08-10T09:22:00.361Z - normal: Delete /Users/ganother/code/ballballball/build/wechatgame/**/*
+2018-08-10T09:22:05.981Z - normal: Compiled project javascript file successfully
+2018-08-10T09:22:05.982Z - normal: Start building assets
+2018-08-10T09:22:05.982Z - normal: Start spawn build-worker
+2018-08-10T09:22:07.309Z - normal: Finish spawn build-worker
+2018-08-10T09:22:07.310Z - normal: Start init build-worker
+2018-08-10T09:22:10.033Z - normal: 1.9.2
+2018-08-10T09:22:10.178Z - normal: Finish init build-worker
+2018-08-10T09:22:10.178Z - normal: Start build-assets in worker
+2018-08-10T09:22:10.742Z - normal: Finish build-assets in worker
+2018-08-10T09:22:10.752Z - normal: Finish building assets
+2018-08-10T09:22:10.767Z - normal: Start building raw assets
+2018-08-10T09:22:10.768Z - normal: Start building plugin scripts
+2018-08-10T09:22:10.843Z - normal: Finish building raw assets
+2018-08-10T09:22:10.849Z - normal: Generating main.js from /Applications/CocosCreator.app/Contents/Resources/static/build-templates/shares/main.js
+2018-08-10T09:22:12.509Z - normal: Built to "/Users/ganother/code/ballballball/build/wechatgame" successfully
+2018-08-10T09:37:23.979Z - info: shutdown preview server

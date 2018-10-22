@@ -2,7 +2,6 @@ const { ccclass, property } = cc._decorator;
 import { user } from './modules/data'
 import { ballScale, ballDerection, ballPositions, bulletPositions } from "./modules/data"
 import { getPositive, getRandom } from './modules/util';
-import { login } from './modules/fetch';
 
 @ccclass
 export default class NewClass extends cc.Component {
@@ -28,6 +27,12 @@ export default class NewClass extends cc.Component {
   @property(cc.Label)
   gold: cc.Label = null
 
+  @property(cc.Label)
+  userName: cc.Label = null
+
+  @property(cc.Node)
+  result: cc.Node = null
+
   @property
   balls: any[] = []
   gameTime: number = 0
@@ -48,7 +53,7 @@ export default class NewClass extends cc.Component {
     this.car.getComponent('Car').game = this
     this.spawnNewBall()
     this.initNewBullet()
-    login()
+    this.userName.string = user.userInfo.nickName
   }
 
   start() {
@@ -260,6 +265,16 @@ export default class NewClass extends cc.Component {
   gameOver() {
     this.singleGameDone()
     this.done = true
-    alert('你输了！！！！！')
+    this.result.active = true
+  }
+
+  // 开始游戏
+  gameStart() {
+    this.done = false
+    this.result.active = false
+    this.stopSpawnBullet = false
+    this.stopSpawnBall = false
+    this.initNewBullet()
+    this.spawnNewBall()
   }
 }
